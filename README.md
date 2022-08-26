@@ -10,10 +10,8 @@ docker-compose up
 
 After that, point your web browser at `http://127.0.0.1:8000/news/msft` or `localhost:8000/news/msft`
 
-USE
-
 ---
-` http://127.0.0.1:8000/news/<ticker> `
+ ` http://127.0.0.1:8000/news/<ticker> `
 ---
 
 **Here < ticker > is msft** ``MSFT``
