@@ -22,11 +22,11 @@ After that, point your web browser at
 
 <img width="500" alt="Screenshot 2022-08-27 at 3 56 55 AM" src="https://user-images.githubusercontent.com/92709590/186998534-51920c57-4ab0-486a-854a-2410a719d433.png">
 
-<h2>Step 3</h2>
-
 After a successful run,   **Done!** message will display on your web page, it means our news has been fetched and saved successfully.
 
-To check whether the news data has been stored or not, parallely open a new termnial and invoke the redis cli of the container, use:
+<h2>Step 3</h2>
+
+To check whether the news data has been stored or not, parallely open a new terminal and invoke the redis cli of the container, use:
 
 ```
 docker exec -it <up container-name> redis-cli
