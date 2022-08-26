@@ -5,10 +5,11 @@ import getopt,sys
 from bs4 import BeautifulSoup
 
 app= Flask(__name__)
-r=Redis(host='localhost',port=6379)
+r=Redis(host='redis',port=6379)
 
 @app.route('/news/<ticker>')
 def hello(ticker):
+    r.rpush("age", "23")
     r.flushall()
     # ticker = 'msft'
 
@@ -35,9 +36,9 @@ def hello(ticker):
         value = headline +" "+ date
         r.rpush(key, value)
 
-    while(r.llen(key)!=0):
-        print(r.lpop(key))
+    # while(r.llen(key)!=0):
+    #     print(r.lpop(key))
     return ("Done!")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
