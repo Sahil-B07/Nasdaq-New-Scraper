@@ -2,16 +2,18 @@
 
 <h3>Enter Ticker/Symbol and get the news</h3>
 
-In the Terminal/Command Prompt use :
-
+Just run the **docker-compose.yml** with:
 
 ```
-../path_to_py_file/task.py -t msft
+docker-compose up
 ```
-* In the above example msft `MSFT` refers to the **Microsoft's Stocks News** 
+
+After that, point your web browser at `http://127.0.0.1:8000/news/msft` or `localhost:8000/news/msft`
+
+USE
 
 ---
-**NOTE**
-: Use `-t` and `ticker` in the command line to get the news related to that ticker.
+` http://127.0.0.1:8000/news/<ticker> `
 ---
 
+**Here < ticker > is msft** ``MSFT``
